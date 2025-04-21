@@ -7,3 +7,6 @@
 
 Применение DDD:
 ValueObjects - расположены в Domain/ValueObjects; Entities - расположены в Domain/Entities; Доменные события - Domain/Events, их handler - Aplication/Handlers. Бизнес правила инкапсулированны внутри доменных объектов.
+
+Применение Clean Architecture:
+Проект разделен на 4 слоя. Слои зависят только внутрь: Domain ни от чего не зависит. Infrastructure от Domain. Aplication от Domain и Infrastructure. Presentation от всех 3. Слои зависят только через интерфейсы: Aplication/Interfaces, Infrastructure/Interfaces. Бизнес логика полностью изолирована в Domain и Aplication слоях
